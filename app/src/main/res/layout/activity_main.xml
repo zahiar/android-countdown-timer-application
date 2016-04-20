@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:text="@string/superscript_hours" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="@string/default_digits"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:text="@string/superscript_mins" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/default_digits"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView02"
+        android:layout_toRightOf="@+id/TextView02"
+        android:text="@string/default_digits"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView05"
+        android:layout_toRightOf="@+id/TextView05"
+        android:text="@string/superscript_secs" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView05"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/TextView03"
+        android:contentDescription="@string/btn_delete_description"
+        android:onClick="removeNumber"
+        android:src="@drawable/btn_delete" />
+
+    <View
+        android:id="@+id/dividerCounter"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView6"
+        android:background="@android:color/holo_blue_light"
+        android:paddingTop="3dp" />
+
+    <TableLayout
+        android:id="@+id/numbersGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_1"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_2"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_3"
+                android:textSize="50sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Button01"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_4"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Button02"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_5"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Button03"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_6"
+                android:textSize="50sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Button04"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_7"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Button05"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_8"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Button06"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_9"
+                android:textSize="50sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/linearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Button07"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:layout_weight="1"
+                android:onClick="addNumber"
+                android:text="@string/btn_num_0"
+                android:textSize="50sp" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/dividerActionButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/actionButtons"
+        android:layout_alignLeft="@+id/actionButtons"
+        android:background="@android:color/holo_blue_light" />
+
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:onClick="stopService"
+            android:text="@string/btn_stop_timer" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:onClick="startService"
+            android:text="@string/btn_set_timer" />
+    </LinearLayout>
+
+</RelativeLayout>

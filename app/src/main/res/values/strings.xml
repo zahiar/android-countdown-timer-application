@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Countdown Timer</string>
+    <string name="btn_set_timer">Set Timer</string>
+    <string name="btn_stop_timer">Stop Timer</string>
+    <string name="default_digits">00</string>
+    <string name="superscript_hours"><sup>H</sup></string>
+    <string name="superscript_mins"><sup>M</sup></string>
+    <string name="superscript_secs"><sup>S</sup></string>
+    <string name="btn_delete_description">Delete Button</string>
+    <string name="btn_num_0">0</string>
+    <string name="btn_num_1">1</string>
+    <string name="btn_num_2">2</string>
+    <string name="btn_num_3">3</string>
+    <string name="btn_num_4">4</string>
+    <string name="btn_num_5">5</string>
+    <string name="btn_num_6">6</string>
+    <string name="btn_num_7">7</string>
+    <string name="btn_num_8">8</string>
+    <string name="btn_num_9">9</string>
+
+</resources>
